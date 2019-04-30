@@ -1,0 +1,15 @@
+{
+  "name": "nodejs-react-article-tuto",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev_client_start": "cd client && yarn && yarn start",
+    "dev_server_start": "cd server && yarn && yarn start",
+    "dev_start": "concurrently --kill-others-on-fail \"yarn dev_server_start\" \"yarn dev_client_start\""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^4.0.1",
+    "nodemon": "^1.18.11"
+  }
+}
