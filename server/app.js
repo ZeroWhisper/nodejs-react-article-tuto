@@ -13,13 +13,17 @@ var graphqlHTTP = require("express-graphql");
 var schema = require("./graphql/bookSchemas");
 var cors = require("cors");
 
-// mongoose
-//   .connect("mongodb://localhost/node-graphql", {
-//     promiseLibrary: require("bluebird"),
-//     useNewUrlParser: true
-//   })
-//   .then(() => console.log("connection successful"))
-//   .catch(err => console.error(err));
+mongoose
+  // .connect("mongodb://localhost/node-graphql", {
+  .connect(
+    "mongodb://baseproject:baseproject123@ds151086.mlab.com:51086/baseproject",
+    {
+      promiseLibrary: require("bluebird"),
+      useNewUrlParser: true
+    }
+  )
+  .then(() => console.log("connection successful"))
+  .catch(err => console.error(err));
 
 var app = express();
 

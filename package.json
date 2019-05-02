@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "dev_client_start": "cd client && yarn && yarn start",
-    "dev_server_start": "cd server && yarn && yarn start",
-    "dev_start": "concurrently --kill-others-on-fail \"yarn dev_server_start\" \"yarn dev_client_start\""
+    "dev_client_start": "cd client && npm install && npm run start",
+    "dev_server_start": "cd server && npm install && npm run start",
+    "dev_start": "concurrently --kill-others-on-fail \"npm run dev_server_start\" \"npm run dev_client_start\""
   },
   "dependencies": {},
   "devDependencies": {
