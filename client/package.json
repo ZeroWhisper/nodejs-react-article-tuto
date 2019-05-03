@@ -1,16 +1,12 @@
 {
-  "name": "client",
+  "name": "react-start-base",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "apollo-boost": "^0.3.1",
-    "graphql": "^14.2.1",
-    "graphql-tag": "^2.10.1",
     "react": "^16.8.6",
-    "react-apollo": "^2.5.5",
     "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.0",
-    "react-scripts": "3.0.0"
+    "react-scripts": "3.0.0",
+    "styled-components": "^4.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -34,6 +30,7 @@
     ]
   },
   "devDependencies": {
-    "bootstrap": "^4.3.1"
+    "babel-plugin-root-import": "^6.1.0",
+    "webpack-dev-server": "3.2.1"
   }
 }
