@@ -1,13 +1,22 @@
 import React from "react";
+import { Provider } from "react-redux";
 
-import Login from "pages/login";
+import "./config/reactotron";
+
+import store from "./store";
+
+import Routes from "./routes";
+
+import GlobalStyle from "styles/global";
 
 function App() {
   return (
-    <div className="App">
-      <Login />
-      Hello world!!
-    </div>
+    <>
+      <Provider store={store}>
+        <GlobalStyle />
+        <Routes />
+      </Provider>
+    </>
   );
 }
 
